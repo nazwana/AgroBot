@@ -100,8 +100,7 @@
 ---
 
 ## 🖼️ Dokumentasi dan Demo
-📷 Lihat foto dan video demo di folder [`/media`](./media)  
-📹 [Link ke YouTube Demo](#) *(opsional, jika ada)*
+📷 Lihat foto dan video demo di folder [`/media`](./DOKUMENTASI ROBOT)  
 
 ---
 
