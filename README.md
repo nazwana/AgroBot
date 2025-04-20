@@ -37,9 +37,39 @@
 - Motor DC dengan driver L298N
 - Sistem Watchdog internal & eksternal
 - Framework: STM32CubeMX / Keil Uvision
-- Bahasa: C 
+- Bahasa: C
+  
+---
+
+## 📚 Tutorial Setup Program Robot
+- Pada halaman awal pilih Start my project from ST Board.  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(43).png)
+- Pada bagian comercial part number pilih STM32F446RE dan klik Strart Project.  
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(56).png)
+- Pada System Core klik Sys, atur debug ke Serial Wire  
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(45).png)
+- Pada bagian RCC, atur High Speed Clock(HSE) dan Low Speed Clock (LSE) Crystal/Ceramic Resonator  
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(46).png)
+- Pada GPIO, atur PA5 dan PC3 sebagai GPIO Output.  
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(47).png)
+- Pada ANALOG, aktifkan ADC3 channel IN12. Pada Parameter Settings aktifkan Contonous Conversion Mode.   
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(48).png)
+- Pada TIMER, aktifkan TIM2 CH1 untuk Servo, TIM3 CH1 untuk DHT11, TIM10 CH1 untuk motor 1, TIM11 CH1 untuk motor 2, TIM12 CH1 untuk motor 3 dan CH2 untuk motor 4.
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(49).png)
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(50).png)
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(51).png)
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(52).png)
+- Pada Conectivity, aktifkan SPI1 dan atur ke Full Duplex Slave dan aktifkan USART2 Asynchronus Mode.
+  ![](DOKUMENTASI_Robot/Screenshot%20(53).png) 
+  ![](DOKUMENTASI_Robot/Screenshot%20(54).png)
+- Pada Clock Configuration tidak perlu diubah dan biarkan secara default.   
+  ![](DOKUMENTASI_Robot/Screenshot%20(55).png)
+- Pada Project Manager, Beri nama project dan atur Toolchain jadi MDK ARM, kemudian klik generate code.   
+  ![](DOKUMENTASI_ROBOT/Screenshot%20(57).png)
+- Setelah itu edit program pada main.c
 
 ---
+
 ## 📚 Tutorial Setup Program Controller
 - Pada halaman awal pilih Start my project from MCU.  
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(43).png)
@@ -55,8 +85,6 @@
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(27).png)
 - Pada ANALOG, aktifkan ADC1 channel IN0 dan IN1. Pada Parameter Settings aktifkan Contonous Conversion Mode.   
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(28).png)
-- Pada Conectivity, aktifkan ADC1 channel IN0 dan IN1. Pada Parameter Settings aktifkan Contonous Conversion Mode.   
-  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(29).png)
 - Pada Conectivity, aktifkan SPI1 dan atur ke Full Duplex Master dan atur presclaer baud rate ke 16.   
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(30).png)
 - Pada Clock Configuration, atur ke HSE dan ubah HCLK jadi 72MHz.   
@@ -68,6 +96,7 @@
 - Pada option for target, atur ARM Compiler menjadi Use Default Compiler Version 6.   
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(35).png)
 - Setelah itu edit program pada main.c
+  
 ---
 
 ## 🖼️ Dokumentasi dan Demo
