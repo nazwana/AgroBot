@@ -34,7 +34,7 @@
 ## 🛠️ Teknologi dan Perangkat
 - Mikrokontroler STM32F446RE dan STM32F103C8T6 
 - Sensor DHT11 dan Soil Moisture Sensor
-- Motor DC dengan driver L298N
+- Motor DC dengan driver L298N dan Motor Servo
 - Sistem Watchdog internal & eksternal
 - Framework: STM32CubeMX / Keil Uvision
 - Bahasa: C
