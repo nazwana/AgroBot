@@ -41,6 +41,31 @@
 - Bahasa: C 
 
 ---
+## 📚 Tutorial Setup Program Controller
+- Pada System Core klik Sys, atur debug ke Serial Wire  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(24).png)
+- Pada bagian RCC, atur High Speed Clock(HSE) Crystal/Ceramic Resonator  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(25).png)
+- Pada bagian IWDG, klik activated dan atur prescaler dengan nilai 32 dan IWDG counter value 4095.  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(26).png)
+- Pada GPIO, atur PA4,PB12,PB13,PB14,PB15 sebagai GPIO Output dan PB3 PB4 sebagai GPIO Input.  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(27).png)
+- Pada ANALOG, aktifkan ADC1 channel IN0 dan IN1. Pada Parameter Settings aktifkan Contonous Conversion Mode.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(28).png)
+- Pada Conectivity, aktifkan ADC1 channel IN0 dan IN1. Pada Parameter Settings aktifkan Contonous Conversion Mode.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(29).png)
+- Pada Conectivity, aktifkan SPI1 dan atur ke Full Duplex Master dan atur presclaer baud rate ke 16.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(30).png)
+- Pada Clock Configuration, atur ke HSE dan ubah HCLK jadi 72MHz.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(31).png)
+- Pada Project Manager, Beri nama project dan atur Toolchain jadi MDK ARM, kemudian klik generate code.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(33).png)
+- Setelah terbuka Keil, klik kanan Aplication/User/Core dan masukkan library NRF2L401.c yang telah dibuat.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(34).png)
+- Pada option for target, atur ARM Compiler menjadi Use Default Compiler Version 6.   
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(35).png)
+- Setelah itu edit program pada main.c
+---
 
 ## 🖼️ Dokumentasi dan Demo
 📷 Lihat foto dan video demo di folder [`/media`](./media)  
