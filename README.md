@@ -1,6 +1,5 @@
 # 🚜 AgroBot : Autonomous Hybrid Vehicle Robot Sprayer Otomatis untuk Pengendalian Agriculture Berbasis Watchdog System Guna Memitigasi Kegagalan Panen
 
-![AgroBot Banner](https://via.placeholder.com/1000x300.png?text=AgroBot+Smart+Sprayer+System) <!-- Ganti link ini dengan banner proyekmu jika ada -->
 
 ## 📘 Deskripsi Proyek
 **AgroBot** merupakan robot hybrid otomatis yang berfungsi sebagai sprayer tanaman di area pertanian. Didesain untuk beroperasi di lingkungan agriculture, sistem ini dilengkapi dengan **Watchdog System** untuk mengantisipasi kegagalan sistem selama operasi. AgroBot bertujuan meminimalisir potensi gagal panen dengan pengendalian hama dan penyakit tanaman secara cerdas, efisien, dan terintegrasi.
