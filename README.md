@@ -42,6 +42,10 @@
 
 ---
 ## 📚 Tutorial Setup Program Controller
+- Pada halaman awal pilih Start my project from MCU.  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(43).png)
+- Pada bagian comercial part number pilih STM32F103C8T6 dan klik Strart Project.  
+  ![](DOKUMENTASI_CONTROLLER/Screenshot%20(44).png)
 - Pada System Core klik Sys, atur debug ke Serial Wire  
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(24).png)
 - Pada bagian RCC, atur High Speed Clock(HSE) Crystal/Ceramic Resonator  
