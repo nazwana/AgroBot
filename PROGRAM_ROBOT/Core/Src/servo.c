@@ -6,8 +6,6 @@
  */
 
 #include "servo.h"
-// servo.c
-#include "servo.h"
 
 void initServo(servo_t *servo, TIM_HandleTypeDef *htim, uint32_t channel)
 {
