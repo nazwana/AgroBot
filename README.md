@@ -41,6 +41,15 @@
   
 ---
 
+## 🚀 Cara Menggunakan
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/nazwana/AgroBot.git
+
+---
+
+
 ## 📚 Tutorial Setup Program Robot
 - Pada halaman awal pilih Start my project from ST Board.  
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(43).png)
