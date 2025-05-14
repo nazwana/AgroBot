@@ -41,6 +41,15 @@
   
 ---
 
+## 🚀 Cara Menggunakan
+
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/nazwana/AgroBot.git
+
+---
+
+
 ## 📚 Tutorial Setup Program Robot
 - Pada halaman awal pilih Start my project from ST Board.  
   ![](DOKUMENTASI_CONTROLLER/Screenshot%20(43).png)
@@ -100,6 +109,8 @@
 ---
 
 ## 🖼️ Dokumentasi dan Demo
+Link PPT : (https://its.id/m/PPTAGROBOT).
+
 📹 Tonton video demo: [VIDEO1.mp4](./DOKUMENTASI_ROBOT/VIDEO1.mp4) | [VIDEO2.mp4](./DOKUMENTASI_ROBOT/VIDEO2.mp4) | [VIDEO3.mp4](./DOKUMENTASI_ROBOT/VIDEO3.mp4) | [VIDEO4.mp4](./DOKUMENTASI_ROBOT/VIDEO4.mp4) | [VIDEO5.mp4](./DOKUMENTASI_ROBOT/VIDEO5.mp4)
 
 📷 Lihat dokumentasi foto di folder [`DOKUMENTASI_ROBOT`](./DOKUMENTASI_ROBOT)
