@@ -87,6 +87,9 @@ gripper_t gripper;
 dht11_t dht;
 soil_moisture_t soilSensor;
 
+int pumpStatus = 0;
+int read = 0;
+
 /* USER CODE BEGIN 0 */
 void processJoystick(uint8_t *data)
 {
@@ -118,13 +121,15 @@ void processJoystick(uint8_t *data)
     }
 }
 
-void checkSoilAndPump(void)
+void checkSoilAndPump()
 {
-    readMoisture(&soilSensor);  
+	  readMoisture(&soilSensor);  
     if (soilSensor.moisture < 40) {  
         setPump(ON);
+			pumpStatus = 1;
     } else {
         setPump(OFF);
+			 pumpStatus = 0;
     }
 }
 
@@ -138,7 +143,10 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+	initAllMotors();
+	initGripper(&gripper, &htim2, TIM_CHANNEL_1);
+	initDHT(&dht, &htim3, GPIOB, GPIO_PIN_1);
+	initSoilMoisture(&soilSensor, &hadc3);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -151,30 +159,25 @@ int main(void)
   /* USER CODE END Init */
 
   /* Configure the system clock */
-  SystemClock_Config();
+  // SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_ADC3_Init();
-  MX_TIM2_Init();
-  MX_TIM3_Init();
-  MX_TIM10_Init();
-  MX_TIM11_Init();
-  MX_TIM12_Init();
-  MX_USART2_UART_Init();
-  MX_SPI3_Init();
+  // MX_GPIO_Init();
+  // MX_ADC3_Init();
+  // MX_TIM2_Init();
+  // MX_TIM3_Init();
+  // MX_TIM10_Init();
+  // MX_TIM11_Init();
+  // MX_TIM12_Init();
+  // MX_USART2_UART_Init();
+  // MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
-	NRF24_Init();
-	NRF24_RxMode((uint8_t*)rxAddress, 52); // MISRA 11.3 - Added cast
-	initAllMotors();
-	initGripper(&gripper, &htim2, TIM_CHANNEL_1);
-	initDHT(&dht, &htim3, GPIOB, GPIO_PIN_1);
-	initSoilMoisture(&soilSensor, &hadc3);
-	
+	// NRF24_Init();
+	// NRF24_RxMode((uint8_t*)rxAddress, 52); // MISRA 11.3 - Added cast
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -186,6 +189,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		processJoystick(RxData);
 		checkSoilAndPump();
+		read++;
 		readDHT(&dht);
 		
 		HAL_Delay(100);  
@@ -670,9 +674,9 @@ void Error_Handler(void)
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
-  while (1)
-  {
-  }
+//  while (1)
+ // {
+  // }
   /* USER CODE END Error_Handler_Debug */
 }
 

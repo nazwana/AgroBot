@@ -1,0 +1,4 @@
+../Core/Src/DHT11.c:13:13:safeDelay	2
+../Core/Src/DHT11.c:19:6:initDHT	1
+../Core/Src/DHT11.c:29:6:setGPIOMode	2
+../Core/Src/DHT11.c:49:9:readDHT	22

@@ -1,0 +1,4 @@
+../Core/Src/DHT11.c:13:13:safeDelay	24	static
+../Core/Src/DHT11.c:19:6:initDHT	24	static
+../Core/Src/DHT11.c:29:6:setGPIOMode	40	static
+../Core/Src/DHT11.c:49:9:readDHT	72	static,ignoring_inline_asm

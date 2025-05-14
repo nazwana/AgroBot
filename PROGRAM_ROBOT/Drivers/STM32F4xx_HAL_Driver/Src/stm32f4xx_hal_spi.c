@@ -775,7 +775,7 @@ HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, const uint8_t *pData
   assert_param(IS_SPI_DIRECTION_2LINES_OR_1LINE(hspi->Init.Direction));
 
   /* Init tickstart for timeout management*/
-  tickstart = HAL_GetTick();
+  //tickstart = HAL_GetTick();
   initial_TxXferCount = Size;
 
   if (hspi->State != HAL_SPI_STATE_READY)

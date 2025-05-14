@@ -1,0 +1,6 @@
+../Core/Src/mechanism.c:16:6:initAllMotors	8	static
+../Core/Src/mechanism.c:25:6:moveForward	8	static
+../Core/Src/mechanism.c:34:6:moveBackward	8	static
+../Core/Src/mechanism.c:42:6:turnLeft	8	static
+../Core/Src/mechanism.c:50:6:turnRight	8	static
+../Core/Src/mechanism.c:58:6:stopMotors	8	static

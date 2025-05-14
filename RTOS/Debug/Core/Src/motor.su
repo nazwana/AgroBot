@@ -1,0 +1,2 @@
+../Core/Src/motor.c:10:6:initMotor	24	static
+../Core/Src/motor.c:20:6:setSpeedMotor	32	static

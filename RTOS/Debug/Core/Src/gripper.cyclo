@@ -1,0 +1,3 @@
+../Core/Src/gripper.c:10:6:initGripper	1
+../Core/Src/gripper.c:19:6:grip	1
+../Core/Src/gripper.c:25:6:release	1

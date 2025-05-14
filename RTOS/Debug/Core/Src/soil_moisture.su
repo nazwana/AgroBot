@@ -1,0 +1,2 @@
+../Core/Src/soil_moisture.c:10:6:initSoilMoisture	24	static
+../Core/Src/soil_moisture.c:28:6:readMoisture	32	static

@@ -65,7 +65,7 @@
  
  void checkSoilMoisture(uint8_t moisture) {  // MISRA 8.2 - Function declaration
      (void)printf("[DEBUG] Moisture value: %u\n", moisture);  // MISRA 17.2 - Ignore return
-     if (moisture < 40U) {  // MISRA 10.1 - Unsigned literal
+     if (moisture < 40U) {  // MISRA 14.4
          pumpOn();
      } else {
          pumpOff();
